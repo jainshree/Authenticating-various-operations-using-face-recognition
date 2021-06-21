@@ -53,7 +53,7 @@ def email_sent():
     s.starttls()
   
     # Authentication
-    s.login(fromaddr, "tanushree5957")
+    s.login(fromaddr, "password-of-sender-id")
   
     # Converts the Multipart msg into a string
     text = msg.as_string()
@@ -69,7 +69,7 @@ def email_sent():
 def whatsapp_msg_sent():
     import pywhatkit
     pywhatkit.sendwhatmsg_instantly(
-        phone_no="+917424883939", 
+        phone_no="+91**********", 
         message="Hello Shrishti , Your Face Detected.....!!!"
 )
     
