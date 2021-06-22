@@ -39,3 +39,23 @@ variable "OS1key"{
 output "OS1subnetId" {
     value = aws_subnet.mysubnet[0].id
 }
+
+variable "OS2Ami"{
+    default = "ami-010aff33ed5991201"
+}
+
+variable "OS2InstanceType"{
+     default="t2.micro"
+}
+
+variable "OS2AZ"{
+    default="ap-south-1b"
+}
+
+variable "OS2key"{
+    default="myaccountAWS"
+}
+
+output "OS2subnetId" {
+    value = aws_subnet.mysubnet[1].id
+}
