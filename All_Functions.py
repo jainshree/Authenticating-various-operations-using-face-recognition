@@ -7,8 +7,8 @@ def email_sent():
     from email.mime.text import MIMEText
     from email.mime.base import MIMEBase
     from email import encoders
-    fromaddr = "udemytanushree125@gmail.com"
-    toaddr = "2018pcecsshrishti151@poornima.org"
+    fromaddr = "senderaddress123@gmail.com"
+    toaddr = "reciveraddress123@gmail.com"
    
     # instance of MIMEMultipart
     msg = MIMEMultipart()
