@@ -53,3 +53,14 @@ resource "aws_instance" "OS1VPC" {
   key_name =var.OS1key
   subnet_id = aws_subnet.mysubnet[0].id
 }
+
+resource "aws_instance" "OS2VPC" {
+  ami = var.OS2Ami
+  instance_type = var.OS2InstanceType
+  tags = {
+     Name = "OS launched in subnet2 of myvpc by TF"
+  }
+  availability_zone=var.OS2AZ
+  key_name =var.OS2key
+  subnet_id = aws_subnet.mysubnet[1].id
+}
